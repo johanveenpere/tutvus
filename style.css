@@ -38,9 +38,21 @@ body {
 }
 
 .dropd {
-    width: 100%;
+    width: 99%;
+    height: 40px;
 }
 
 .nr {
-    margin-right: 5%;
+    margin-right: 4%;
+    margin-bottom: 0px;
+    height: 40px;
+}
+
+.post {
+    background-color: #4CAF50;
+    width: 63.4%;
+    float: right;
+    float: top;
+    height: 40px;
+  
 }
