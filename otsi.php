@@ -1,7 +1,9 @@
 <?php
 
 require_once('sql.php');
-echo "Connected successfully";
+
+$kasutaja_id = 1;
+
 
 $sql = "SELECT id, name, FROM user";
 $result = $conn->query($sql);
@@ -9,9 +11,12 @@ $result = $conn->query($sql);
 
 #sisse logitud kasutaja andmed
 
-$kuupaev = $_POST["kuupaev"];
-$aeg = $_POST["aeg"];
+$restoran = $_GET["restoran"];
+$aeg = $_GET["aeg"];
 
+#$conn -> query("INSERT INTO lunch ('id', 'lunch_time', 'user_id_1', 'user_id_2', 'location') VALUES (NULL, '12:00:00','".$kasutaja_id."', NULL, '".$restoran."'" );
+$conn -> query("INSERT INTO `lunch` (`id`, `lunch_time`, `user_id_1`, `user_id_2`, `location`) VALUES (NULL, '2018-07-26 " . $aeg . "', '1', NULL, '" . $restoran . "')");
+/*
 $user = $conn->query("SELECT name FROM user WHERE id=1");
 $time = "2018-07-24 13:00:00";
 #while($obj = $user -> fetch_object()){
@@ -32,6 +37,7 @@ if($time == $louna -> lunch_time){
     echo "aeg sama";
 }
 }
+*/
 
 
 ?> 
@@ -40,7 +46,7 @@ if($time == $louna -> lunch_time){
 
     </head>
     <body>
-        <p><?php printf("sina: %s", $user -> fetch_object() -> name, "\n"); ?> </p>
-        <p><?php printf("%s", $louna_search); ?> </p>
+<!--        <p><?php printf("sina: %s", $user -> fetch_object() -> name, "\n"); ?> </p>
+        <p><?php printf("%s", $louna_search); ?> </p>-->
     </body>
 </html>
