@@ -1,29 +1,38 @@
-#ylaosa    {
-    color:red;   
-    height: 20%;
-}
+.container {
+    height: 80%;
+    margin: auto;
     
-
-#vasakpool {
-top: 5%;
-position: absolute;
-width: 50%;
-height: 80%;
+}
+.vasakpool {
+    width: 40%;
+    float: left;
+    height: 90%;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+    margin-top: 5%;
 }
 
-#parempool {
-top: 5%;
-left: 50%;
-width: 50%;
-height: 80%;
+
+.parempool {
+    width: 40%;
+    float:left;
+  
+    height: 90%;
+    margin-top: 5%;
+   
 }
 
-.ui-button {
-    position: relative;
-    color: red;
-    top: 50px;
-    left: 420px;
-    right: -420px;
-  }
 
-.ui_selection_dropdown
+.ulaosa {
+    background-color: aliceblue !important;
+    height: 15%;
+    width: 100%;
+}
+body {
+    background-color: #4B5363 !important;
+}
+
+.paneel {
+    height: 50%;
+
+}
