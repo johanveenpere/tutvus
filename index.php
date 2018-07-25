@@ -36,8 +36,11 @@ $restoranid = explode(",", $conn -> query("SELECT restaurants FROM company WHERE
 							echo "<option value=\"".$menuu_element."\">".$menuu_element."</option>";
 						}
 					?>
-				</select>
-				<input class="tekstivali" id="aeg_input" type="time" name="aeg"><br>
+				</select><br>
+				<p>tund</p>
+				<input class="tekstivali" id="aeg_input" type="number" name="aeg_tund" min="1" max="23"><br>
+				<p>minut</p>
+				<input class="tekstivali" id="aeg_input" type="number" name="aeg_minut" min="0" max="59"><br>
 				<input type="submit" value="otsi">
 			</form>
 		</div>

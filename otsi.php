@@ -12,32 +12,20 @@ $result = $conn->query($sql);
 #sisse logitud kasutaja andmed
 
 $restoran = $_GET["restoran"];
-$aeg = $_GET["aeg"];
+$hour = $_GET["aeg_tund"];
+$minute = $_GET["aeg_minut"];
 
-#$conn -> query("INSERT INTO lunch ('id', 'lunch_time', 'user_id_1', 'user_id_2', 'location') VALUES (NULL, '12:00:00','".$kasutaja_id."', NULL, '".$restoran."'" );
-$conn -> query("INSERT INTO `lunch` (`id`, `lunch_time`, `user_id_1`, `user_id_2`, `location`) VALUES (NULL, '2018-07-26 " . $aeg . "', '1', NULL, '" . $restoran . "')");
-/*
-$user = $conn->query("SELECT name FROM user WHERE id=1");
-$time = "2018-07-24 13:00:00";
-#while($obj = $user -> fetch_object()){
-#    printf("\n sinu nimi: %s\n",$obj -> name);
-#    printf("%s",$obj -> time);
-#}
-#echo [$user];
-$lounad = $conn -> query("SELECT * FROM lunch");
-while($louna = $lounad -> fetch_object()){
-if($lounad == false){
-    $louna_search = "lounaid ei ole";
-}
-else{
-    $louna_search = "kellega matchiti: " . $louna ->  user_id_1 . " louna aeg: " . $louna -> lunch_time;
-}
+$date = new DateTime();
+$date = $date->setTime($hour, $minute);
+$date = $date->modify('+1 day');
 
-if($time == $louna -> lunch_time){
-    echo "aeg sama";
+
+#echo $_GET["aeg"];
+echo $date->format('d M H:i');
+echo " ".$date->format("Y-m-d H:i:s");
+if(! $conn -> query("INSERT INTO `lunch` (`id`, `lunch_time`, `user_id_1`, `user_id_2`, `location`) VALUES (NULL, '" . $date->format("Y-m-d H:i:s") . "'  , '1', NULL, '" . $restoran . "')")){
+    echo "query fail";
 }
-}
-*/
 
 
 ?> 
