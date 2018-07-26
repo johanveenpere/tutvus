@@ -3,6 +3,7 @@
     width: 300px;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 200px;
 }
 
 
@@ -12,7 +13,6 @@ body {
     height: 100%;
     top: 0;
     left: 0;
-    padding-top: 100px;
 }
 
 .edasi {
