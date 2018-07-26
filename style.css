@@ -74,15 +74,31 @@ margin-bottom: 2%;
     background-color: white;
 }
 
-#postita {
+.noustu {
     background-color: rgb(255, 255, 255);
     border: 3px solid #232733;
     width: 15%;
     float: right;
-    height: 2px !important;
+    height: 30px;
     position: relative;
     bottom: 7px;
     right: -5px;
+    border-radius: 30px;
+    outline: none;
+}
+
+.keeldu {
+    background-color: rgb(255, 255, 255);
+    border: 3px solid #232733;
+    width: 15%;
+    float: right;
+    height: 30px;
+    position: relative;
+    bottom: 7px;
+    right: -5px;
+    border-radius: 30px;
+    outline: none;
+    margin-right: 10px;
 }
 
 #restodropdown {
