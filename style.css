@@ -23,7 +23,7 @@
 }
 
 
-.ulaosa {
+.header {
     height: 15%;
     width: 100%;
 }
@@ -32,7 +32,7 @@ body {
 }
 
 
-.dropd {
+.dropdownclass {
     width: 30%;
     height: 40px;
     margin-right: 4%;
@@ -61,7 +61,7 @@ body {
 }
 
 
-.div {
+.kast {
 background-color: #fee6e7;
 padding: 2%;
 margin-bottom: 2%;
@@ -85,7 +85,7 @@ margin-bottom: 2%;
     right: -5px;
 }
 
-#drpd {
+#restodropdown {
     background-color: #f4e6e7;
 }
 
