@@ -10,6 +10,7 @@
     margin-left: 7.5%;
     margin-right: 7.5%;
     margin-top: 5%;
+    
 }
 
 
@@ -19,20 +20,76 @@
   
     height: 90%;
     margin-top: 5%;
-   
 }
 
 
 .ulaosa {
-    background-color: aliceblue !important;
     height: 15%;
     width: 100%;
 }
 body {
-    background-color: #4B5363 !important;
+    background-color: #232733 !important;
 }
 
-.paneel {
-    height: 50%;
+
+.dropd {
+    width: 30%;
+    height: 40px;
+    margin-right: 4%;
+    margin-bottom: 4%;
+    
+}
+
+.nr {
+    margin-right: 4%;
+    margin-bottom: 0px;
+    height: 40px;
+    width: 11%;
+
+    
+
+}
+
+.post {
+    height: 40%;
+    width: 63.4%;
+    position: relative;
+    float: top;
+    height: 40px;
+    right: 0%;
+   
+}
+
+
+.div {
+background-color: #fee6e7;
+padding: 2%;
+margin-bottom: 2%;
+
+}
+
+.nupp {
+    width: 15%;
+    float: right;
+    background-color: white;
+}
+
+#postita {
+    background-color: rgb(255, 255, 255);
+    border: 3px solid #232733;
+    width: 15%;
+    float: right;
+    height: 2px !important;
+    position: relative;
+    bottom: 7px;
+    right: -5px;
+}
+
+#drpd {
+    background-color: #f4e6e7;
+}
+
+#varv {
+    background-color: #f4e6e7;
 
 }

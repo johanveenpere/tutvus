@@ -19,7 +19,20 @@
 }
 
 .tekstivali {
-	width: 20%;
+	width: 10%;
 	margin-top: 5px;
 	margin-bottom: 5px;
+}
+
+.postitus {
+	background-color: #ff729f;
+	width: 30%;
+	left: 5%;
+	margin-top: 1%;
+	margin-bottom: 1%;
+	font-family: arial;
+}
+
+body {
+	background-color: #3a4254;
 }
