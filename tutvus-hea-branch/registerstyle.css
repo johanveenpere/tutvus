@@ -1,0 +1,24 @@
+.loginkast {
+    text-align:center;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+body {
+    background-color:#4B5363 !important;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding-top: 100px;
+}
+
+.edasi {
+    margin-top: 20px;
+    width:100%;
+    right:0%;
+}
+
+    

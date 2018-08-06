@@ -1,0 +1,25 @@
+#nupp {
+	background-color: #666699;
+	text-align: center;
+	position: absolute;
+	height: 10%;
+	width: 20%;
+	left: 40%;
+	top: 10%;
+	font-family: arial;
+	margin-top: 30px;
+}
+
+#väljad {
+	text-align: center;
+}
+
+#soogikoht_input {
+	width: 20%;
+}
+
+.tekstivali {
+	width: 20%;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
