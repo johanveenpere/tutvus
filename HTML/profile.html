@@ -1,0 +1,63 @@
+<html !DOCTYPE>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      crossorigin="anonymous"></script>
+    <script src="semantic/dist/semantic.min.js"></script>
+</head>
+<body>
+ <div class="container">
+        <div class="header">
+            <div class="headcontainer">
+                <div><p class="greeting">Tere tulemast, Jon</p> </div>
+                <div><p class="colunch">CO-LUNCH</p> </div>
+            </div>
+        </div>
+        
+        <div class="sisucontainer">
+            <div class="vasakpool" style="width:40%; float:left; margin-right:5%;">
+                        <p>Lõunasöögi pakkumised</p>
+                <div class="kast"> 
+                        <span>Homme: 12.00</span><br>
+                        <span>Koht: Kivi Paber Kaarid</span><br>
+                        <span>Amet: Lillekastja</span>        
+                    <button  class="noustu">NOUSTU</button>
+                </div>
+                <div class="kast">
+                    <span>Homme: 12.00</span><br>
+                    <span>Koht: Kivi Paber Kaarid</span><br>
+                    <span>Amet: Lillekastja</span>
+                    <button  class="noustu">NOUSTU</button>
+                </div>
+            </div>
+            <div class="parempool">
+                <p>Lisa ise</p> 
+                <label>Vali restoran</label><br>  
+                <select id='restodropdown' class="ui dropdown dropdownclass">                    
+                        <option value="1">KPK</option>
+                        <option value="2">Karbes</option>
+                        <option value="3">Restoran3</option>
+                        <option value="4">Restoran4
+                        <option value="5">Restoran5</option> 
+                        </option>
+                </select><br>
+                <label>Vali aeg</label><br> 
+                <div class="ui input nr">
+                        <input type="number">                    
+                </div>          
+                <div class="ui input nr">
+                        <input type="number">                    
+                </div><br>
+                <button id="varv" class="circular ui icon button postita">POSTITA</button>
+            </div>   
+        </div>
+
+</div>
+    
+</body>
+
+</html> 
+
