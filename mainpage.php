@@ -28,13 +28,13 @@
 					<script>$('.ui.dropdown')
 						.dropdown();</script>			
 					<div class="ui right labeled input">
-						<input type="number">
+						<input type="text">
 						<div class="ui basic label">
 							Tund
 						</div>
 					</div>
 					<div class="ui right labeled input">
-						<input type="number">
+						<input type="text">
 						<div class="ui basic label">
 							Minut
 						</div>
