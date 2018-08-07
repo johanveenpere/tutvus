@@ -1,12 +1,19 @@
+body {
+    background-color: bisque;   
+}
 .container {
-    height: 1800px;
+    height: 985px;
     margin: auto;
     background-color: bisque;   
 }
+.header {
+    border-bottom: 2px solid red;
+}
+
 
 .headcontainer {
     max-width: 1600px;
-    border: 2px solid red;
+
     margin: auto;
     height: 70px;
 }
@@ -26,13 +33,14 @@
 .sisucontainer {
     max-width: 1600px;
     margin: auto;
-    border: 2px solid blue;
     height: 800px;
-    background-color: blue;
+
 }
 
 .parempool {
+    margin-top: 30px;
     width: 600px;
+
     float:right;
     height: 680px;
 }
@@ -43,6 +51,18 @@
     margin-right: 100px;
 }
 
-.segment {
-    height: 40px;
+.button {
+    margin: auto;
+    position: relative;
+    margin-left: 470px !important;
+}
+
+.selection {
+    margin-top: 30px !important;
+    width: 225px !important;
+}
+
+.labeled {
+    width: 50px !important;
+    margin-right: 60px !important;
 }
