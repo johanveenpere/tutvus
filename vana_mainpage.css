@@ -1,0 +1,68 @@
+body {
+    background-color: bisque;   
+}
+.container {
+    height: 985px;
+    margin: auto;
+    background-color: bisque;   
+}
+.header {
+    border-bottom: 2px solid red;
+}
+
+
+.headcontainer {
+    max-width: 1600px;
+
+    margin: auto;
+    height: 70px;
+}
+
+.co-lunch {
+    text-align: center;
+    float: right;
+    font-size: 40;
+}
+
+.greeting {
+    text-align: center;
+    font-size: 40;
+    float: left;
+}
+
+.sisucontainer {
+    max-width: 1600px;
+    margin: auto;
+    height: 800px;
+
+}
+
+.parempool {
+    margin-top: 30px;
+    width: 600px;
+
+    float:right;
+    height: 680px;
+}
+.vasakpool {
+    width: 600px;
+    float:left;
+    height: 680px;
+    margin-right: 100px;
+}
+
+.button {
+    margin: auto;
+    position: relative;
+    margin-left: 470px !important;
+}
+
+.selection {
+    margin-top: 30px !important;
+    width: 225px !important;
+}
+
+.labeled {
+    width: 50px !important;
+    margin-right: 60px !important;
+}
