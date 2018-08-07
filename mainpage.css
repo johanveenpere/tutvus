@@ -1,0 +1,56 @@
+.container {
+    height: 1800px;
+    margin: auto;
+    
+}
+
+.headcontainer {
+    max-width: 1600px;
+    border: 2px solid red;
+    margin: auto;
+    height: 70px;
+}
+
+.co-lunch {
+    text-align: center;
+    float: right;
+    font-size: 40;
+}
+
+.greeting {
+    text-align: center;
+    font-size: 40;
+    float: left;
+}
+
+.sisucontainer {
+    max-width: 1600px;
+    margin: auto;
+    border: 2px solid blue;
+    height: 800px;
+}
+
+.parempool {
+    width: 600px;
+    float:right;
+    height: 680px;
+    border: 2px solid green;
+    
+    
+}
+
+.vasakpool {
+    width: 600px;
+    float:left;
+    height: 680px;
+    border: 2px solid black;
+    margin-right: 100px;
+}
+
+
+    
+
+
+
+
+
