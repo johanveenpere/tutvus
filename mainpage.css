@@ -1,7 +1,7 @@
 .container {
     height: 1800px;
     margin: auto;
-    
+    background-color: bisque;   
 }
 
 .headcontainer {
@@ -28,29 +28,21 @@
     margin: auto;
     border: 2px solid blue;
     height: 800px;
+    background-color: blue;
 }
 
 .parempool {
     width: 600px;
     float:right;
     height: 680px;
-    border: 2px solid green;
-    
-    
 }
-
 .vasakpool {
     width: 600px;
     float:left;
     height: 680px;
-    border: 2px solid black;
     margin-right: 100px;
 }
 
-
-    
-
-
-
-
-
+.segment {
+    height: 40px;
+}

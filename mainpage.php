@@ -18,10 +18,22 @@
 	</div>       
         <div class="sisucontainer" style"height=800px;">
             <div class="parempool">
-                        
+				
             </div>
             <div class="vasakpool">
-                <p>nwne</p>
+				<div class="ui raised segment">
+					<p>Rida 1</p>
+					<p>Rida 2</p>
+					<p>Rida 3</p>
+					<p>Rida 4</p>
+					
+				</div>
+				<div class="ui raised segment">
+					<p>Rida 1</p>
+					<p>Rida 2</p>
+					<p>Rida 3</p>
+					<p>Rida 4</p>					
+				</div>
             </div>   
         </div>
 
