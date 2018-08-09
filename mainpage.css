@@ -1,0 +1,34 @@
+.greeting {
+    font-size: 4vw;
+    float: left;
+    text-align: center;
+    margin-top: 1.5%;
+}
+
+
+.co-lunch {
+    font-size: 4vw;
+    float: right;
+    text-align: center;
+    margin-top: 1.5%;
+}
+
+.labeled {
+    width: 50px !important;
+    margin-right: 60px !important;
+}
+
+.selection {
+    width: 34% !important;
+}
+
+.button {
+    width: 34% !important;
+}
+
+.positive {
+    margin: auto;
+    position: relative;
+    margin-left: 65% !important;
+}
+
