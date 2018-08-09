@@ -1,0 +1,15 @@
+.column {
+    border: 3px solid red;
+}
+
+.co-lunch {
+    text-align: center;
+    float: right;
+    font-size: 40vw;
+}
+
+.greeting {
+    text-align: center;
+    font-size: 40vw;
+    float: left;
+}

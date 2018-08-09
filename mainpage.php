@@ -17,10 +17,9 @@
     <div class="seven wide column vasakpool"> <!--Vasak pool-->
         <h3>Lounasoogi pakkumised</h3>
                     <div class="ui raised segment">
-                        <p>Rida 1</p>
-                        <p>Rida 2</p>
-                        <p>Rida 3</p>
-                        <p>Rida 4</p>
+                        <p><b>Koht:</b> Kivi Paber Käärid</p>
+                        <p><b>Kellaaeg:</b> 12.45</p>
+                        <p><b>Amet:</b> Lillekastja</p>
                         <button class="positive ui button">NÕUSTU</button>			
                     </div>
                     <div class="ui raised segment">
