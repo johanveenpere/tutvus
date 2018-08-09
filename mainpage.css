@@ -1,3 +1,10 @@
+body {
+    background-color: #E1EFDB !important;
+}
+.fifteen {
+    margin-bottom: 3% !important;
+}
+
 .greeting {
     font-size: 4vw;
     float: left;
@@ -12,6 +19,13 @@
     text-align: center;
     margin-top: 1.5%;
 }
+.vasakpool {
+    margin-left: 4% !important;
+}
+
+.parempool {
+    margin-left: 7% !important;
+}
 
 .labeled {
     width: 50px !important;
@@ -19,7 +33,7 @@
 }
 
 .selection {
-    width: 34% !important;
+    width: 38.9% !important;
 }
 
 .button {

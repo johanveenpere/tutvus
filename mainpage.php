@@ -14,7 +14,7 @@
         <span class="greeting">Tere tulemast, Jon</span>
 		<span class="co-lunch">CO-LUNCH</span>
     </div>
-    <div class="eight wide column"> <!--Vasak pool-->
+    <div class="seven wide column vasakpool"> <!--Vasak pool-->
         <h3>Lounasoogi pakkumised</h3>
                     <div class="ui raised segment">
                         <p>Rida 1</p>
@@ -32,7 +32,7 @@
                     </div>
     </div>
 
-        <div class="eight wide column">
+        <div class="seven wide column parempool">
             <h2>Postita ise</h2>
             <div class="ui selection dropdown">			
                 <div class="default text">Restoran</div>
