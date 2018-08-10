@@ -24,20 +24,32 @@
 	</head>
 
 	<body>
-		<div class="ui container">
-			<p>REGISTER</p>
-			<form action="" class="ui form" method="post">
-				<div class='field'><input type='text' placeholder='first name' name='first_name'></div>
-				<div class='field'><input type='text' placeholder='last name' name='last_name'></div>
-				<div class='field'><input type='email' placeholder='email' name='email'></div>
-				<div class='field'><input type='text' placeholder='phone number' name='phone_num'></div>
-				<div class='field'><input type='text' placeholder='username' name='username'></div>
-				<div class='field'><input type='password' placeholder='password' name='password'></div>
-				<button type='submit' class='ui button'>log in</button>
-			</form>
-			<div class="register">
-				<p>already a user?</p><a href='login.php'>log in</a>
+	<div class="ui grid">
+			<div class="fifteen wide centered column">
+				<h4 class="co-lunch">CO-LUNCH</h4>
 			</div>
+			<div class="four wide centered column">
+				<h2>Registeeri</h2>
+				<div class="ui input">
+  					<input type="text" placeholder="Nimi">
+				</div>
+				<div class="ui input">
+  					<input type="text" placeholder="Kasutajanimi">
+				</div>
+				<div class="ui input">
+  					<input type="password" placeholder="parool">
+				</div>
+				<div class="ui input">
+  					<input type="number" placeholder="Telefoni number">
+				</div>
+				<div class="ui input">
+  					<input type="e-mail" placeholder="meiliaadress">
+				</div>
+				<button class="ui button">
+					Registreeri
+				</button>
+				<p class='registreeri'>Ikka on kasutaja?</br> <a href='login.php'>Logi sisse</a></p>
+			</div>	
 		</div>
 	</body>
 </html>

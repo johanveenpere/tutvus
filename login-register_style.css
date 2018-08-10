@@ -34,6 +34,7 @@ body {
 
 .input {
 	width: 100%;
+	margin-bottom: 2%;
 }
 
 h2 {
@@ -42,10 +43,12 @@ h2 {
 
 .button {
 	float: right;
-	margin-top: 2% !important;
 }
 
 .co-lunch {
     font-size: 4vw !important;
     text-align: center !important;
+}
+.column {
+	margin-top: 1% !important;
 }

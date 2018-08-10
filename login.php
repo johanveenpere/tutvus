@@ -47,10 +47,12 @@
 				<div class="ui input">
   					<input type="password" placeholder="Parool">
 				</div>
-				<button class="ui button">
+				<button class="ui button" onclick='mainpage.php'>
 					Logi sisse
 				</button>
+				<p class='registreeri'>Pole veel kasutajat? <a href='register.php'>Registreeri</a></p>
 			</div>	
+
 		</div>
 	</body>
 </html>
