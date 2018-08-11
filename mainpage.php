@@ -9,7 +9,9 @@
 		}
 		while($lunch = $result -> fetch_object()){
             $lunchLocationName = getLocationName($connection, $lunch);
-			$lunchesareacode = $lunchesareacode . "<div class='lunch'>";
+
+			$lunchesareacode = $lunchesareacode . "<div class='ui raised segment'>";
+
 			$lunchesareacode = $lunchesareacode . "<p>asukoht: ". $lunchLocationName . "</p>";
             if($lunch -> lunch_max_participant_number != 0){
                 $lunchesareacode = $lunchesareacode . "<p>kohad: ".$lunch -> lunch_max_participant_number." / ".getCurrentNumberOfParticipants($connection, $lunch). " </p>";
@@ -30,6 +32,8 @@
 
 <html>
 	<head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 		<link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
 		<script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
 		<script src="semantic/dist/semantic.min.js"></script>
@@ -49,15 +53,17 @@
                 </select>
             </form>
         </div>
-		<div id="apparea">
-			<div id="header">
-
-			</div>
-			<div id="lunchesarea">
-				<?php
-					echo $lunchesareacode;
-				?>
-			</div>
+		<div id="apparea" class="ui container">
+            <div class="ui grid">
+    			<div id="header" class="fifteen wide centered column">
+                    <h3>NIMI PERENIMI</h3>
+    			</div>
+    			<div id="lunchesarea" class="fifteen wide centered column">
+    				<?php
+    					echo $lunchesareacode;
+    				?>
+    			</div>
+            </div>
 		</div>
 	</body>
 </html>
