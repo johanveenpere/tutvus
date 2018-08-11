@@ -9,7 +9,9 @@
 		}
 		while($lunch = $result -> fetch_object()){
             $lunchLocationName = getLocationName($connection, $lunch);
+
 			$lunchesareacode = $lunchesareacode . "<div class='ui raised segment'>";
+
 			$lunchesareacode = $lunchesareacode . "<p>asukoht: ". $lunchLocationName . "</p>";
             if($lunch -> lunch_max_participant_number != 0){
                 $lunchesareacode = $lunchesareacode . "<p>kohad: ".$lunch -> lunch_max_participant_number." / ".getCurrentNumberOfParticipants($connection, $lunch). " </p>";
@@ -27,9 +29,11 @@
 
 	}
 ?>
+
 <html>
 	<head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 		<link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
 		<script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
 		<script src="semantic/dist/semantic.min.js"></script>
@@ -63,3 +67,4 @@
 		</div>
 	</body>
 </html>
+
