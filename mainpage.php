@@ -8,11 +8,11 @@
 			echo "sql error: " . mysqli_error($connection);
 		}
 		while($lunch = $result -> fetch_object()){
-            $lunchLocationName = getLocationName($connection, $lunch);
+
 
 			$lunchesareacode = $lunchesareacode . "<div class='ui raised segment'>";
 
-			$lunchesareacode = $lunchesareacode . "<p>asukoht: ". $lunchLocationName . "</p>";
+			$lunchesareacode = $lunchesareacode . "<p>asukoht: ". getLocationName($connection, $lunch) . "</p>";
             if($lunch -> lunch_max_participant_number != 0){
                 $lunchesareacode = $lunchesareacode . "<p>kohad: ".$lunch -> lunch_max_participant_number." / ".getCurrentNumberOfParticipants($connection, $lunch). " </p>";
             }
@@ -67,4 +67,3 @@
 		</div>
 	</body>
 </html>
-
