@@ -27,6 +27,7 @@
 
 	}
 ?>
+
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
@@ -60,3 +61,4 @@
 		</div>
 	</body>
 </html>
+
