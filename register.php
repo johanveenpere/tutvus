@@ -3,14 +3,14 @@
 	require_once("database.php");
 
 	if($_SERVER["REQUEST_METHOD"] == "POST"){
-		if($connection -> query("SELECT * FROM `users` WHERE username =".$_POST["username"])){
+		if($connection -> query("SELECT * FROM `users` WHERE username=".$_POST["username"])){
 			echo "user found";
 		}
 		else{
 			echo "user not found";
 		}
-		$result = $connection -> query("SELECT * FROM `users` WHERE username =".$_POST["username"]) or trigger_error(mysqli_error($connection));
-		if(mysqli_num_rows($result) === 0){
+		$result = $connection -> query("SELECT * FROM `users` WHERE username=".$_POST["username"]) or trigger_error(mysqli_error($connection));
+		if(mysqli_num_rows($result) == 0){
 			#$connection -> query("INSERT INTO `users` (`user_id`, `first_name`, `last_name`, `tel_num`, `user_email`, `username`, `password`) VALUES (NULL, 'kaspar', 'jesmin', '666666666', 'midagion', 'kaspar', 'jesmin')");
 			if($connection -> query("INSERT INTO `users` (`user_id`, `first_name`, `last_name`, `tel_num`, `user_email`, `username`, `password`) VALUES (NULL, '".$_POST["first_name"]."', '".$_POST["last_name"]."', '".$_POST["phone_num"]."', '".$_POST["email"]."', '".$_POST["username"]."', '".$_POST["password"]."')")){
 				echo "user registration failed";
