@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <html>
 	<head>
 	</head>
@@ -6,7 +6,7 @@
 		<p>logged in</p>
 	</body>
 </html>
-=======
+
 <?php
 	require_once("database.php");
 	$lunchesareacode = "";
@@ -50,4 +50,3 @@
 			</div>
 	</body>
 </html>
->>>>>>> bd67768b2f73445a2eca3e01f4af675fd044f228
