@@ -24,6 +24,7 @@
 
 .lunch {
 /*	margin-top: 3%;
+
 	background-color: #D78861;
 	border-radius: 5px;
 	position: relative;
@@ -31,6 +32,7 @@
     left: 15%;
     padding-top: 3px;
     padding-bottom: 3px;*/
+
 }
 
 .popup {
@@ -42,3 +44,4 @@
     visibility: hidden;
     z-index: 2;
 }
+
