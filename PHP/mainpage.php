@@ -29,15 +29,15 @@
 		<link rel="stylesheet" href="mainpagestyle.css">
 	</head>
 	<body>
-		<div id="apparea">
-			<div id="header">
+		<div class="ui grid">
+  			<div class="fifteen wide column header">
 
 			</div>
+		</div>
 			<div id="lunchesarea">
 				<?php
 					echo $lunchesareacode;
 				?>
 			</div>
-		</div>
 	</body>
 </html>
