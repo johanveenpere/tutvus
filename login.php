@@ -17,12 +17,11 @@
 				
 			if($count == 1) {
 				$_SESSION['login_user'] = $myusername;
-			
-<<<<<<< HEAD
-				header("location: mainpage.php");
-=======
+
+
+
 				header("location: mainpage.php?sortbytime");
->>>>>>> bd67768b2f73445a2eca3e01f4af675fd044f228
+
 			}
 			else {
 				echo "Your Login Name or Password is invalid";
