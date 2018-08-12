@@ -56,7 +56,7 @@
 		<div id="apparea" class="ui container">
             <div class="ui grid">
     			<div id="header" class="fifteen wide centered column">
-                    <h3>NIMI PERNIMI</h3>
+                    <h3>NIMI PERENIMI</h3>
     			</div>
     			<div id="lunchesarea" class="fifteen wide centered column">
     				<?php
