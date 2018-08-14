@@ -45,3 +45,17 @@
     z-index: 2;
 }
 
+#nimi {
+	float: right;
+	font-size: 2vw;
+}
+
+#colunch {
+	float: left;
+	margin-top: 0;
+	font-size: 2vw;
+}
+
+#addLunchButton {
+	float: left;
+}
