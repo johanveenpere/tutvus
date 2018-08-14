@@ -38,7 +38,12 @@
 		<script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
 		<script src="semantic/dist/semantic.min.js"></script>
 		<link rel="stylesheet" href="mainpagestyle.css">
-        <script src="addLunch.js"></script>
+        <script src="addLunch.js" type="text/javascript"></script>
+        <!--script>
+            function showAddLunchPopup(){
+                console.log("show popup");
+            }
+        </script-->
 	</head>
 	<body>
         <div class="popup">
@@ -50,13 +55,22 @@
                             echo "<option value=" . $lunch_location -> lunch_location_id.">".$lunch_location -> lunch_location_name."</option>";
                         }
                     ?>
-                </select>
+                </select><br>
+                <input type="date" name="day"></input><br>
+                <input type="time" name="startTime"></input>
+                <input type="time" name="endTime"></input>
+                <div class="ui checkbox">
+                    <input type="checkbox" name="unlimitedParticipants">
+                    <label>inimesed võivad piiramatult lõunaga ühineda</label>
+                </div>
+                <input type="number" name="maxNumParticipants"></input>
             </form>
         </div>
 		<div id="apparea" class="ui container">
             <div class="ui grid">
     			<div id="header" class="fifteen wide centered column">
                     <h3>NIMI PERENIMI</h3>
+                    <button id="addLunchButton" class='ui button'">add lunch</button>
     			</div>
     			<div id="lunchesarea" class="fifteen wide centered column">
     				<?php
