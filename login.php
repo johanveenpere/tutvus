@@ -33,8 +33,8 @@
 	</head>
 
 	<body>
-		<div class="ui container">
-			<p>LOGIN</p>
+		<div class="ui container testmine">
+			<p id="test">LOGIN</p>
 			<form action="" class="ui form" method="post">
 						<div class='field'><input type='text' placeholder='username' name='username'></div>
 						<div class='field'><input type='password' placeholder='password' name='password'></div>

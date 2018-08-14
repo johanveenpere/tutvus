@@ -19,3 +19,11 @@
 	display: inline;
 	top: 80%;
 }
+
+#test {
+    background-color: red;
+}
+
+.testmine {
+    background-color: red;
+}
