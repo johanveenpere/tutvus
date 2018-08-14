@@ -1,3 +1,7 @@
+body {
+    background-color: #E1EFDB !important;
+}
+
 .loginBox {
 	position: absolute;
 	text-align: center;
@@ -20,6 +24,7 @@
 	top: 80%;
 }
 
+<<<<<<< HEAD
 #test {
     background-color: red;
 }
@@ -27,3 +32,33 @@
 .testmine {
     background-color: red;
 }
+=======
+.four {
+	padding: 3% 3% !important;
+	margin-top: 6%;
+	background-color: #E9DBEF;
+	border-radius: 3%;
+
+}
+
+.input {
+	width: 100%;
+	margin-bottom: 2%;
+}
+
+h2 {
+	text-align: center;
+}
+
+.button {
+	float: right;
+}
+
+.co-lunch {
+    font-size: 4vw !important;
+    text-align: center !important;
+}
+.column {
+	margin-top: 1% !important;
+}
+>>>>>>> bbef32095bc42a3ace4eb7ccc7fe852e42f09196

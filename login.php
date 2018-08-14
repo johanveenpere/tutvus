@@ -33,6 +33,7 @@
 	</head>
 
 	<body>
+<<<<<<< HEAD
 		<div class="ui container testmine">
 			<p id="test">LOGIN</p>
 			<form action="" class="ui form" method="post">
@@ -42,7 +43,27 @@
 			</form>
 			<div class="register">
 				<p>don't have an account?</p><a href='register.php?register'>register</a>
+=======
+	<form class="ui form">
+		<div class="ui grid">
+			<div class="fifteen wide centered column">
+				<h4 class="co-lunch">CO-LUNCH</h4>
+>>>>>>> bbef32095bc42a3ace4eb7ccc7fe852e42f09196
 			</div>
+			<div class="four wide centered column">
+				<h2>Logi sisse</h2>
+				<div class="ui input">
+  					<input type="text" placeholder="Kasutajanimi">
+				</div>
+				<div class="ui input">
+  					<input type="password" placeholder="Parool">
+				</div>
+				<button class="ui button" onclick='mainpage.php'>
+					Logi sisse
+				</button>
+	</form>		
+				<p class='registreeri'>Pole veel kasutajat? <a href='register.php'>Registreeri</a></p>
+			</div>	
 		</div>
 	</body>
 </html>
