@@ -12,12 +12,12 @@
 
 			$lunchesareacode = $lunchesareacode . "<div class='ui raised segment'>";
 
-			$lunchesareacode = $lunchesareacode . "<p>asukoht: ". getLocationName($connection, $lunch) . "</p>";
+			$lunchesareacode = $lunchesareacode . "<p><b>Asukoht: </b>". getLocationName($connection, $lunch) . "</p>";
             if($lunch -> lunch_max_participant_number != 0){
-                $lunchesareacode = $lunchesareacode . "<p>kohad: ".$lunch -> lunch_max_participant_number." / ".getCurrentNumberOfParticipants($connection, $lunch). " </p>";
+                $lunchesareacode = $lunchesareacode . "<p><b>Kohad: </b> ".$lunch -> lunch_max_participant_number." / ".getCurrentNumberOfParticipants($connection, $lunch). " </p>";
             }
             else{
-                $lunchesareacode = $lunchesareacode . "<p>kohad: piiramatu</p>";
+                $lunchesareacode = $lunchesareacode . "<p><b>Kohad: </b> piiramatu</p>";
             }
 			$lunchesareacode = $lunchesareacode . "</div>";
 		}
