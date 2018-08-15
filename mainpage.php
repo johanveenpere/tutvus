@@ -45,6 +45,7 @@
             }
         </script-->
 	</head>
+
 	<body>
         <div class="popup">
             <form action="addlunch.php">
@@ -71,12 +72,16 @@
     			<div id="header" class="fifteen wide centered column">
                     <h3 id="nimi">NIMI PERENIMI</h3>
 					<h3 id="colunch">CO-LUNCH</h3><br><br><br>
-                    <button id="addLunchButton" class='ui button'">add lunch</button>
-    			</div>
+					<button class="ui button sortbutton">Koht⇅</button>
+					<button class="ui button sortbutton">Aeg⇅</button>
+					<button class="ui button sortbutton">Osalejad⇅</button>
+					<button id="addLunchButton" class='ui button'>Lisa lõuna</button>
+				</div>
     			<div id="lunchesarea" class="fifteen wide centered column">
     				<?php
-    					echo $lunchesareacode;
-    				?>
+						echo $lunchesareacode;
+						
+					?>
     			</div>
             </div>
 		</div>
