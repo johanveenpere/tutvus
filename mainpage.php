@@ -46,7 +46,7 @@
         </script-->
 	</head>
 	<body>
-        <div class="popup">
+        <div class="popup" id="lunchPopup">
             <form action="addlunch.php">
                 <select name="lunchlocations">
                     <?php
@@ -66,12 +66,14 @@
                 <input type="number" name="maxNumParticipants"></input>
             </form>
         </div>
+		<div id="shadow">
+		</div>
 		<div id="apparea" class="ui container">
             <div class="ui grid">
     			<div id="header" class="fifteen wide centered column">
                     <h3 id="nimi">NIMI PERENIMI</h3>
 					<h3 id="colunch">CO-LUNCH</h3><br><br><br>
-                    <button id="addLunchButton" class='ui button'">add lunch</button>
+                    <button onclick="showAddLunchPopup()" id="addLunchButton" class='ui button'">add lunch</button>
     			</div>
     			<div id="lunchesarea" class="fifteen wide centered column">
     				<?php
