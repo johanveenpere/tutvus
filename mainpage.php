@@ -8,10 +8,7 @@
 			echo "sql error: " . mysqli_error($connection);
 		}
 		while($lunch = $result -> fetch_object()){
-
-
 			$lunchesareacode = $lunchesareacode . "<div class='ui raised segment'>";
-
 			$lunchesareacode = $lunchesareacode . "<p><b>Asukoht: </b>". getLocationName($connection, $lunch) . "</p>";
             if($lunch -> lunch_max_participant_number != 0){
                 $lunchesareacode = $lunchesareacode . "<p><b>Kohad: </b> ".$lunch -> lunch_max_participant_number." / ".getCurrentNumberOfParticipants($connection, $lunch). " </p>";
@@ -26,7 +23,6 @@
 		#sordib lõunad koha järgi
 	}
 	else{
-
 	}
 ?>
 
@@ -74,16 +70,8 @@
     			<div id="header" class="fifteen wide centered column">
                     <h3 id="nimi">NIMI PERENIMI</h3>
 					<h3 id="colunch">CO-LUNCH</h3><br><br><br>
-<<<<<<< HEAD
                     <button onclick="showAddLunchPopup()" id="addLunchButton" class='ui button'">add lunch</button>
     			</div>
-=======
-					<button class="ui button sortbutton">Koht⇅</button>
-					<button class="ui button sortbutton">Aeg⇅</button>
-					<button class="ui button sortbutton">Osalejad⇅</button>
-					<button id="addLunchButton" class='ui button'>Lisa lõuna</button>
-				</div>
->>>>>>> 9c9efab5b0d095985789bb1f7d909f926ed88d19
     			<div id="lunchesarea" class="fifteen wide centered column">
 					<?php
 						echo $lunchesareacode;	

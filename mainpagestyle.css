@@ -58,7 +58,6 @@ body {
 
 #addLunchButton {
 	float: left;
-<<<<<<< HEAD
 }
 
 @keyframes backgroundgraying {
@@ -83,12 +82,3 @@ body {
 	-webkit-animation-name: backgroundgraying;
 	-webkit-animation-duration: 1s;
 }
-=======
-	margin-left: 1%;
-}
-
-.sortbutton {
-	margin-left: 1% !important;
-	float: left;	
-}
->>>>>>> 9c9efab5b0d095985789bb1f7d909f926ed88d19
