@@ -78,10 +78,10 @@
 					<button id="addLunchButton" class='ui button'>Lisa lõuna</button>
 				</div>
     			<div id="lunchesarea" class="fifteen wide centered column">
-    				<?php
-						echo $lunchesareacode;
+					<?php
+						echo $lunchesareacode;	
 						
-					?>
+					?>		
     			</div>
             </div>
 		</div>
