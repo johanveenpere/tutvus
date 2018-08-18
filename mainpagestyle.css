@@ -58,7 +58,7 @@ body {
 
 #addLunchButton {
 	float: left;
-<<<<<<< HEAD
+    margin-left: 1%;
 }
 
 @keyframes backgroundgraying {
@@ -71,24 +71,24 @@ body {
 	to {opacity: 0.5;}
 }
 
-#shadow {
+.shadowoff {
 	position: absolute;
 	width: 100%;
 	height: 100%;
     background-color: gray;
     z-index: 2;
+    opacity: 0;
     visibility: hidden;
-	animation-name: backgroundgraying;
-	animation-duration: 1s;
-	-webkit-animation-name: backgroundgraying;
-	-webkit-animation-duration: 1s;
-}
-=======
-	margin-left: 1%;
+    -webkit-transition: opacity 1s;
 }
 
-.sortbutton {
-	margin-left: 1% !important;
-	float: left;	
+.shadowon {
+    opacity: 0.6;
+    visibility: visible;
 }
->>>>>>> 9c9efab5b0d095985789bb1f7d909f926ed88d19
+
+
+.sortbutton {
+    margin-left: 1% !important;
+    float: left;
+}
