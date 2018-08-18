@@ -5,7 +5,5 @@ function showAddLunchPopup(){
     shadow.classList.add("shadowon");
 };
 
-$('#select')
-  .dropdown()
-;
-
+$('.ui.dropdown')
+  .dropdown();
