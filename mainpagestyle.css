@@ -1,97 +1,94 @@
 body {
-/*	position: absolute;
-	width: 40%;
-	height: 100%;
-*/
-	background-color: #FFEECE;
-/*	left: 30%; */
-}
-
-/*#header {
-	background-color: #CCCCCC;
-	width: 100%;
-	height: 10%;
-	left: 0%;
-	position: relative;
-}*/
-
-/*#lunchesarea {
-	overflow: auto;
-	position: relative;
-	height: 90%;
-	width: 100%;
-}*/
-
-/*.lunch {
-	margin-top: 3%;
-
-	background-color: #D78861;
-	border-radius: 5px;
-	position: relative;
-	width: 70%;
-    left: 15%;
-    padding-top: 3px;
-    padding-bottom: 3px;
-
-}*/
-
-.popup {
-    position: absolute;
-    top: 20%;
-    left: 40%;
-    width: 20%;
-    height: 20%;
-    visibility: hidden;
-    z-index: 3;
-}
-
-#nimi {
-	float: right;
-	font-size: 2.5vw;
-}
-
-#colunch {
-	float: left;
-	margin-top: 0;
-	font-size: 2.5vw;
-}
-
-#addLunchButton {
-	float: left;
-
-    margin-left: 1%;
-
-}
-
-@keyframes backgroundgraying {
-	from {opacity: 0;}
-	to {opacity: 0.5;}
-}
-
-@-webkit-keyframes backgroundgraying {
-	from {opacity: 0;}
-	to {opacity: 0.5;}
-}
-
-.shadowoff {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-    background-color: gray;
-    z-index: 2;
-    opacity: 0;
-    visibility: hidden;
-    -webkit-transition: opacity 1s;
-}
-
-.shadowon {
-    opacity: 0.6;
-    visibility: visible;
-}
-
-
-.sortbutton {
-    margin-left: 1% !important;
-    float: left;
-}
-
+	/*	position: absolute;
+		width: 40%;
+		height: 100%;
+	*/
+		background-color: #FFEECE;
+	/*	left: 30%; */
+	}
+	
+	/*#header {
+		background-color: #CCCCCC;
+		width: 100%;
+		height: 10%;
+		left: 0%;
+		position: relative;
+	}*/
+	
+	/*#lunchesarea {
+		overflow: auto;
+		position: relative;
+		height: 90%;
+		width: 100%;
+	}*/
+	
+	/*.lunch {
+		margin-top: 3%;
+		background-color: #D78861;
+		border-radius: 5px;
+		position: relative;
+		width: 70%;
+		left: 15%;
+		padding-top: 3px;
+		padding-bottom: 3px;
+	}*/
+	
+	.popup {
+		position: absolute;
+		top: 20%;
+		left: 40%;
+		width: 20%;
+		height: 20%;
+		visibility: hidden;
+		z-index: 3;
+	}
+	
+	#nimi {
+		float: right;
+		font-size: 2.5vw;
+	}
+	
+	#colunch {
+		float: left;
+		margin-top: 0;
+		font-size: 2.5vw;
+	}
+	
+	#addLunchButton {
+		float: left;
+	
+		margin-left: 1%;
+	
+	}
+	
+	@keyframes backgroundgraying {
+		from {opacity: 0;}
+		to {opacity: 0.5;}
+	}
+	
+	@-webkit-keyframes backgroundgraying {
+		from {opacity: 0;}
+		to {opacity: 0.5;}
+	}
+	
+	.shadowoff {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-color: gray;
+		z-index: 2;
+		opacity: 0;
+		visibility: hidden;
+		-webkit-transition: opacity 1s;
+	}
+	
+	.shadowon {
+		opacity: 0.8;
+		visibility: visible;
+	}
+	
+	
+	.sortbutton {
+		margin-left: 1% !important;
+		float: left;
+	}
