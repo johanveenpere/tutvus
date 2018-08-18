@@ -58,10 +58,9 @@ body {
 
 #addLunchButton {
 	float: left;
-<<<<<<< HEAD
+
     margin-left: 1%;
-=======
->>>>>>> 5b252940506aa2ffe2f4f6ca2c8ab43a7839c769
+
 }
 
 @keyframes backgroundgraying {
@@ -84,7 +83,6 @@ body {
     visibility: hidden;
     -webkit-transition: opacity 1s;
 }
-<<<<<<< HEAD
 
 .shadowon {
     opacity: 0.6;
@@ -96,5 +94,4 @@ body {
     margin-left: 1% !important;
     float: left;
 }
-=======
->>>>>>> 5b252940506aa2ffe2f4f6ca2c8ab43a7839c769
+
