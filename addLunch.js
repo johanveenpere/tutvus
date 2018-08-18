@@ -4,3 +4,8 @@ function showAddLunchPopup(){
     var shadow = document.getElementById("shadow")
     shadow.classList.add("shadowon");
 };
+
+$('#select')
+  .dropdown()
+;
+

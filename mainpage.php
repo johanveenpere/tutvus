@@ -45,14 +45,15 @@
 	<body>
         <div class="popup" id="lunchPopup">
             <form action="addlunch.php">
-                <select name="lunchlocations">
+                <select name="gender" class="ui dropdown" id="select">
+                    <option value="">Restoran</option>
                     <?php
                         $result = $connection -> query("SELECT * FROM lunch_locations");
                         while($lunch_location = $result -> fetch_object()){
                             echo "<option value=" . $lunch_location -> lunch_location_id.">".$lunch_location -> lunch_location_name."</option>";
                         }
                     ?>
-                </select><br>
+              </select><br>
                 <input type="date" name="day"></input><br>
                 <input type="time" name="startTime"></input>
                 <input type="time" name="endTime"></input>
