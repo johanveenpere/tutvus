@@ -29,8 +29,7 @@
 <html>
 	<head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-		<link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+    s	<link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
 		<script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
 		<script src="semantic/dist/semantic.min.js"></script>
 		<link rel="stylesheet" href="mainpagestyle.css">
@@ -45,7 +44,7 @@
 	<body>
         <div class="popup" id="lunchPopup">
             <form action="addlunch.php">
-                <select name="lunchlocations">
+                <select class="ui dropdown" name="lunchlocations">
                     <?php
                         $result = $connection -> query("SELECT * FROM lunch_locations");
                         while($lunch_location = $result -> fetch_object()){
@@ -53,14 +52,16 @@
                         }
                     ?>
                 </select><br>
-                <input type="date" name="day"></input><br>
+                <input class="date" type="date" name="day"></input><br>
                 <input type="time" name="startTime"></input>
-                <input type="time" name="endTime"></input>
+                <input type="time" name="endTime"></input><br>
                 <div class="ui checkbox">
-                    <input type="checkbox" name="unlimitedParticipants">
-                    <label>inimesed võivad piiramatult lõunaga ühineda</label>
-                </div>
+                <input type="checkbox" name="example">
+                <label>Piiramatu arv inimesi v6ib l6unaga uhineda</label>
+                </div><br>
+                <div class="ui input participants">
                 <input type="number" name="maxNumParticipants"></input>
+                </div>
             </form>
         </div>
 		<div id="shadow" class="shadowoff">
@@ -73,7 +74,7 @@
 					<button class="ui button sortbutton">Koht⇅</button>
 					<button class="ui button sortbutton">Aeg⇅</button>
 					<button class="ui button sortbutton">Osalejad⇅</button>
-					<button onclick="showAddLunchPopup()" id="addLunchButton" class='ui button'">add lunch</button>
+					<button onclick="showAddLunchPopup()" id="addLunchButton" class='ui button'>Lisa l6ouna</button>
 				</div>
     			<div id="lunchesarea" class="fifteen wide centered column">
     				<?php

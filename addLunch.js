@@ -4,6 +4,6 @@ function showAddLunchPopup(){
     var shadow = document.getElementById("shadow")
     shadow.classList.add("shadowon");
 };
-
-$('.ui.dropdown')
-  .dropdown();
+$('#example2').calendar({
+    type: 'date'
+  });

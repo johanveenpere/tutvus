@@ -92,3 +92,14 @@ body {
 		margin-left: 1% !important;
 		float: left;
 	}
+	.dropdown {
+		visibility: hidden !important;
+	}
+
+	.date {
+		border-radius: 20px !important;
+	}
+
+	.participants {
+		width: 19% !important;
+	}
