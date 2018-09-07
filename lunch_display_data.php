@@ -7,4 +7,13 @@
         $participants = $connection -> query("SELECT * FROM lunch_participants WHERE lunch_id=".$lunch -> lunch_id);
         return mysqli_num_rows($participants);
     }
+
+    function getLunchTime($lunch){
+        $returnstring = "";
+        $startdate = date_create($lunch -> lunch_starting_date);
+        $endtime = date_create($lunch -> lunch_end_date);
+        $returnstring = $returnstring . $startdate -> format("d M");
+        $returnstring = $returnstring . " " . $startdate -> format("H:i") . " - " . $endtime -> format("H:i");
+        return $returnstring;
+    }
 ?>

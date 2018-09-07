@@ -10,6 +10,7 @@
 		while($lunch = $result -> fetch_object()){
 			$lunchesareacode = $lunchesareacode . "<div class='ui raised segment'>";
 			$lunchesareacode = $lunchesareacode . "<p><b>Asukoht: </b>". getLocationName($connection, $lunch) . "</p>";
+            $lunchesareacode = $lunchesareacode . "<p><b>Aeg:  </b>" . getLunchTime($lunch);
             if($lunch -> lunch_max_participant_number != 0){
                 $lunchesareacode = $lunchesareacode . "<p><b>Kohad: </b> ".$lunch -> lunch_max_participant_number." / ".getCurrentNumberOfParticipants($connection, $lunch). " </p>";
             }
@@ -34,18 +35,12 @@
 		<script src="semantic/dist/semantic.min.js"></script>
 		<link rel="stylesheet" href="mainpagestyle.css">
         <script src="addLunch.js" type="text/javascript"></script>
-        
-        <!--script>
-            function showAddLunchPopup(){
-                console.log("show popup");
-            }
-        </script-->
 	</head>
 
 	<body>
         <div class="popup" id="lunchPopup">
             <form action="addlunch.php">
-                <select class="ui dropdown" name="lunchlocations">
+                <select id="lunchLocations" name="lunchlocations">
                     <?php
                         $result = $connection -> query("SELECT * FROM lunch_locations");
                         while($lunch_location = $result -> fetch_object()){
@@ -53,19 +48,19 @@
                         }
                     ?>
                 </select><br>
-                <input class="date" type="date" name="day"></input><br>
-                <input type="time" name="startTime"></input>
-                <input type="time" name="endTime"></input><br>
+                <input id="newlunchdate" class="newlunchstyle" type="date" name="day"></input><br>
+                <input class="newlunchstyle" type="time" name="startTime"></input>
+                <input class="newlunchstyle" type="time" name="endTime"></input><br>
                 <div class="ui checkbox">
                 <input type="checkbox" name="example">
-                <label>Piiramatu arv inimesi v6ib l6unaga uhineda</label>
+                <label>Piiramatu inimeste arv</label>
                 </div><br>
-                <div class="ui input participants">
-                <input type="number" name="maxNumParticipants"></input>
+                <div class="newlunchstyle">
+                <input class="newlunchstyle" type="number" name="maxNumParticipants"></input>
                 </div>
             </form>
         </div>
-		<div id="shadow" class="shadowoff">
+		<div id="shadow" class="shadowoff" onclick="hideAddLunchPopup()">
 		</div>
 		<div id="apparea" class="ui container">
             <div class="ui grid">
