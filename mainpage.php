@@ -10,8 +10,9 @@
 		while($lunch = $result -> fetch_object()){
 			$lunchesareacode = $lunchesareacode . "<div class='ui raised segment'>";
 			$lunchesareacode = $lunchesareacode . "<p><b>Asukoht: </b>". getLocationName($connection, $lunch) . "</p>";
-            $lunchesareacode = $lunchesareacode . "<p><b>Aeg:  </b>" . getLunchTime($lunch);
-            if($lunch -> lunch_max_participant_number != 0){
+			$lunchesareacode = $lunchesareacode . "<p><b>Aeg:  </b>" . getLunchTime($lunch);
+			
+			if($lunch -> lunch_max_participant_number != 0){
                 $lunchesareacode = $lunchesareacode . "<p><b>Kohad: </b> ".$lunch -> lunch_max_participant_number." / ".getCurrentNumberOfParticipants($connection, $lunch). " </p>";
             }
             else{
@@ -19,13 +20,13 @@
             }
 			$lunchesareacode = $lunchesareacode . "</div>";
 		}
-	}
+	} 
 	else if(isset($_GET["sortbylocation"])){
 		#sordib lõunad koha järgi
 	}
 	else{
 	}
-?>
+	?>
 
 <html>
 	<head>
@@ -49,14 +50,16 @@
                     ?>
                 </select><br>
                 <input id="newlunchdate" class="newlunchstyle" type="date" name="day"></input><br>
-                <input class="newlunchstyle" type="time" name="startTime"></input>
+				<p>Alguse aeg</p>
+				<input class="newlunchstyle" type="time" name="startTime"></input>
                 <input class="newlunchstyle" type="time" name="endTime"></input><br>
                 <div class="ui checkbox">
                 <input type="checkbox" name="example">
                 <label>Piiramatu inimeste arv</label>
                 </div><br>
                 <div class="newlunchstyle">
-                <input class="newlunchstyle" type="number" name="maxNumParticipants"></input>
+					<p class="maxarv">Maksimum inimeste arv</p>
+                <input class="maxinimesi" type="number" name="maxNumParticipants"></input>
                 </div>
             </form>
         </div>

@@ -7,32 +7,6 @@ body {
 	/*	left: 30%; */
 	}
 
-	/*#header {
-		background-color: #CCCCCC;
-		width: 100%;
-		height: 10%;
-		left: 0%;
-		position: relative;
-	}*/
-
-	/*#lunchesarea {
-		overflow: auto;
-		position: relative;
-		height: 90%;
-		width: 100%;
-	}*/
-
-	/*.lunch {
-		margin-top: 3%;
-		background-color: #D78861;
-		border-radius: 5px;
-		position: relative;
-		width: 70%;
-		left: 15%;
-		padding-top: 3px;
-		padding-bottom: 3px;
-	}*/
-
 	.popup {
 		position: absolute;
 		top: 20%;
@@ -108,7 +82,7 @@ body {
     border-radius: 5px;
     position: relative;
     width: 90%;
-    height: 20%;
+    height: 15% !important;
     font-size: 15px;
 }
 
@@ -116,10 +90,19 @@ body {
     border-radius: 5px;
     position: relative;
     width: 90%;
-    height: 25%;
+    height: 15%;
     font-size: 20px;
 }
 
 #newlunchdate {
     border-radius: 5px;
+}
+
+.maxinimesi {
+	height: 32% !important;
+}
+
+.maxarv {
+	margin-bottom: 1;
+	margin-top: 2% !important;
 }
